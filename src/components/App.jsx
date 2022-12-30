@@ -64,7 +64,7 @@ componentDidMount(){
   }
 }
 
-componentDidUpdate(prevProps, prevState){
+componentDidUpdate(_, prevState){
   if(prevState.contacts.length !== 0 && prevState.contacts.length !== this.state.contacts.length){
     localStorage.setItem(LS, JSON.stringify(this.state.contacts))
 }
